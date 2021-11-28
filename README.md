@@ -1,4 +1,4 @@
-# nftmarathon
+# Tokertize
 Chainlink hackaton 2021
 
 
