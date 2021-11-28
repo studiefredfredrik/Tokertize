@@ -199,6 +199,19 @@ contract PaySplitter is Context, Ownable, ChainlinkClient {
     function webPayee(uint256 index) public view returns (uint) {
         return _webTokens[index];
     }
+    
+    function getAmountAccruedWeb(uint256 tokenId) public view returns (uint256) {
+        return _webMapping[tokenId].amount;
+    }
+
+    function getAmountRemainingAd(uint256 tokenId) public view returns (uint256) {
+        return _adMapping[tokenId].amount;
+    }
+    
+    function emergencyWithdraw() external onlyOwner(){
+        (bool sent,) = msg.sender.call{value: address(this).balance}("");
+        require(sent, "Failed to send Ether");
+    }
 
     /**
      * @dev Triggers a transfer to `account` of the amount of Ether they are owed, according to their percentage of the
@@ -238,8 +251,9 @@ contract PaySplitter is Context, Ownable, ChainlinkClient {
             "get",
             string(
                 abi.encodePacked(
-                    "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD/",
-                    tokenId.toString()
+                    "https://nftmarathon.xyz/api/oracle/sites/",
+                    tokenId.toString(),
+                    "/clicks/0"
                 )
             )
         );
