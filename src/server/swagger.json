@@ -1,0 +1,742 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "src",
+    "version": "1.0.0"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/link/{SITE}/view": {
+      "get": {
+        "summary": "GET /api/link/{SITE}/view",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/link/{SITE}/click/{AD_CODE}": {
+      "get": {
+        "summary": "GET /api/link/{SITE}/click/{AD_CODE}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "AD_CODE",
+            "description": "AD_CODE",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/contract/{FROM}/{TO}/": {
+      "get": {
+        "summary": "GET /api/statistics/contract/{FROM}/{TO}/",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "FROM",
+            "description": "FROM",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TO",
+            "description": "TO",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/user/{SESSION_TOKEN}": {
+      "get": {
+        "summary": "GET /api/statistics/user/{SESSION_TOKEN}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SESSION_TOKEN",
+            "description": "SESSION_TOKEN",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/subscribe": {
+      "post": {
+        "summary": "POST /api/subscribe",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/register/site": {
+      "post": {
+        "summary": "POST /api/register/site",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/register/ad": {
+      "post": {
+        "summary": "POST /api/register/ad",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/contract/nfts": {
+      "get": {
+        "summary": "GET /api/contract/nfts",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/contract/abi": {
+      "get": {
+        "summary": "GET /api/contract/abi",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/ads/{AD}/views": {
+      "get": {
+        "summary": "GET /api/statistics/ads/{AD}/views",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "AD",
+            "description": "AD",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/ads/{AD}/views/{FROM}/{TO}": {
+      "get": {
+        "summary": "GET /api/statistics/ads/{AD}/views/{FROM}/{TO}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "AD",
+            "description": "AD",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "FROM",
+            "description": "FROM",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TO",
+            "description": "TO",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/ads/{AD}/clicks": {
+      "get": {
+        "summary": "GET /api/statistics/ads/{AD}/clicks",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "AD",
+            "description": "AD",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/ads/{AD}/clicks/{FROM}/{TO}": {
+      "get": {
+        "summary": "GET /api/statistics/ads/{AD}/clicks/{FROM}/{TO}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "AD",
+            "description": "AD",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "FROM",
+            "description": "FROM",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TO",
+            "description": "TO",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/sites/{SITE}/views": {
+      "get": {
+        "summary": "GET /api/statistics/sites/{SITE}/views",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/sites/{SITE}/views/{FROM}/{TO}": {
+      "get": {
+        "summary": "GET /api/statistics/sites/{SITE}/views/{FROM}/{TO}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "FROM",
+            "description": "FROM",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TO",
+            "description": "TO",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/sites/{SITE}/clicks": {
+      "get": {
+        "summary": "GET /api/statistics/sites/{SITE}/clicks",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/sites/{SITE}/clicks/{FROM}/{TO}": {
+      "get": {
+        "summary": "GET /api/statistics/sites/{SITE}/clicks/{FROM}/{TO}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "FROM",
+            "description": "FROM",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "TO",
+            "description": "TO",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/oracle/sites/{SITE}/clicks/{FROM}": {
+      "get": {
+        "summary": "GET /api/oracle/sites/{SITE}/clicks/{FROM}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "FROM",
+            "description": "FROM",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/oracle/ads/{AD}/clicks/{FROM}": {
+      "get": {
+        "summary": "GET /api/oracle/ads/{AD}/clicks/{FROM}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "AD",
+            "description": "AD",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "FROM",
+            "description": "FROM",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/metadata/sites/{SITE}": {
+      "get": {
+        "summary": "GET /api/metadata/sites/{SITE}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "SITE",
+            "description": "SITE",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/metadata/ads/{AD}": {
+      "get": {
+        "summary": "GET /api/metadata/ads/{AD}",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "AD",
+            "description": "AD",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/contract/developer": {
+      "get": {
+        "summary": "GET /api/contract/developer",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/contract/sites": {
+      "get": {
+        "summary": "GET /api/contract/sites",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/contract/ads": {
+      "get": {
+        "summary": "GET /api/contract/ads",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/developer/memoryCache": {
+      "get": {
+        "summary": "GET /api/developer/memoryCache",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

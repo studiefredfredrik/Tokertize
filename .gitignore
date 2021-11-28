@@ -1,0 +1,4 @@
+src/server/node_modules
+.idea
+src/smart-contract/build
+src/smart-contract/node_modules

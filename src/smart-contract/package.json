@@ -1,0 +1,26 @@
+{
+  "name": "smart-contract",
+  "version": "1.0.0",
+  "description": "Contract dependencies for nftmarathon",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "copy": "cp ./build/contracts/AdBasedNFTs.json ./../server/contract-abi/AdBasedNFTs.json && cp ./build/contracts/PaySplitter.json ./../server/contract-abi/PaySplitter.json && cp ./build/contracts/WebBasedNFTs.json ./../server/contract-abi/WebBasedNFTs.json",
+    "prod": "truffle compile && cp ./build/contracts/AdBasedNFTs.json ./../server/contract-abi/AdBasedNFTs.json && cp ./build/contracts/PaySplitter.json ./../server/contract-abi/PaySplitter.json && cp ./build/contracts/WebBasedNFTs.json ./../server/contract-abi/WebBasedNFTs.json",
+    "dev": "truffle migrate && cp ./build/contracts/AdBasedNFTs.json ./../server/contract-abi/AdBasedNFTs.json && cp ./build/contracts/PaySplitter.json ./../server/contract-abi/PaySplitter.json && cp ./build/contracts/WebBasedNFTs.json ./../server/contract-abi/WebBasedNFTs.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.2",
+    "@openzeppelin/contracts": "^4.4.0",
+    "@truffle/hdwallet-provider": "^1.7.0"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.18"
+  }
+}
